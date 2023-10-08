@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+body{
+    display:flex;
+    font-family: 'Bakbak One', cursive;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ #letraA{
+    background-color: none;
+ }
+ .cabecera{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+
+ }
+
+#contenedor-general{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*padding: 10px;*/
+   /* height: 369px;*/
+   /* width: 1047px;*/
+    border-width: 8px;
+    border-color: #FFA07A;
+    border-style: groove;
+    border-radius: 20px;
+    background-image: url(./assets/pexels-mnm-zameer-3308588.jpg);
+}
+
+
+button{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #f1dc90;
+    padding: 2px;
+    margin: 1px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #0a0a0a;
+    font-size: 13px;
+    border-style: groove;
+    border-width: 3px;
+    border-color: #f7fafb;
+    height: 36px;
+    width: 36px;
+}
+
+button:active {
+    background-color:red;
+}    
+
+button:hover{
+    background-color: #FA8072;
+    
+}
+
+#funciones{
+    padding-bottom: 15px;
+}
+
+ #funciones button{
+    width: 45px;
+    height: 26px;
+}
+
+.secciones-teclado{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-items: center;
+    padding: 10px;
+}
+
+#barra-espaciadora{
+    width: 233px;
+}
+
+#enter, #shift, #tab, #esc {
+    width: 69px;
+}
+
+#caps-lock, #backspace{
+    width: 98px; 
+}
+
+#ctrl, #alt, #win, #fn {
+    width: 55px;
+}
+
+#espacio-vacio{
+    height: 41px;
+}
+
+
+#especial{
+    display: flex;
+    justify-content: center;
+}
+
+#numpad0, #pad-punto{
+    width: 60px;
+}
+
+#pad-mas, #pad-enter{
+    height:74px;
+
+}
+
+#pad-numerico{
+    padding-left: 10px;
+}
+
+#pad-numerico-especial{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+#intermedio-body{
+    height:50px;
+}
+
+
+@media (max-width:1060px){
+    button{
+        width: 20px;
+    }
+
+    #funciones button{
+        width: 22.5px;
+        height: 26px;
+    }
+
+    #barra-espaciadora{
+        width: 116.5px;
+    }
+
+    #enter, #shift, #tab, #esc {
+        width: 34.5px;
+    }
+    
+    #caps-lock, #backspace{
+        width: 49px; 
+    }
+    
+    #ctrl, #alt, #win, #fn {
+        width: 27.5px;
+    }
+    
+    #numpad0, #pad-punto{
+        width: 30px;
+    }
+    
+}
+
+@media (max-width:690px){
+
+    button{
+        border-radius: 1px;
+        width: 10px;
+        height: 10px;
+        font-size: 5px;
+        padding: 0px;
+        margin: -1.5px;
+        border-width: none;
+    }
+
+    #funciones button{
+        width: 12px;
+        height: 8px;
+    }
+
+    #barra-espaciadora{
+        width: 58px;
+        height: 10px;
+    }
+
+    #enter, #shift, #tab, #esc {
+        width: 17px;
+        height: 10px;
+    }
+    
+    #caps-lock, #backspace{
+        width: 25px; 
+        height: 10px;
+    }
+    
+    #ctrl, #alt, #win, #fn {
+        width: 14px;
+        height: 10px;
+    }
+    
+    #numpad0, #pad-punto{
+        width: 15px;
+        height: 10px;
+    }
+
+    #pad-mas, #pad-enter{
+        height:20px;
+    }
+
+    .secciones-teclado{
+        padding: 4px;
+    }
+
+    #funciones{
+        padding-bottom: 3px;
+    }
+
+    #intermedio-body{
+        height:10px;
+    }
+
+    #pad-numerico{
+        padding-left: 2px;
+    }
+    
+    #pad-numerico-especial{
+       padding-right: 2px;
+    }
+}
